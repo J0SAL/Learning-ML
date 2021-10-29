@@ -23,5 +23,6 @@ The number of decision stumps it will make will depend on the number of features
 11. But these weights are not normalized that is their sum is not equal to one. To do this, we will sum them and divide each final weight with that sum. 
 12. After this, we have to make our second decision stump. For this, we will make a class intervals for the normalized weights.
 13. After that, we want to make a second weak model. But to do that, we need a sample dataset on which the second weak model can be run. For making it, we will run N number of
-    iterations. On each iteration, it will calculate a random number ranging between 0-1 and this random will be compared with class intervals we created and on which class interval it lies, that row will be selected for sample data set. So new sample data set would also be of N observation. 
+    iterations. On each iteration, it will calculate a random number ranging between 0-1 and this random will be compared with class intervals we created and on which class
+    interval it lies, that row will be selected for sample data set. So new sample data set would also be of N observation. 
 14. This whole process will continue for M decision stumps. The final sequential tree would be considered as the final tree.
